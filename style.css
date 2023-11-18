@@ -1,0 +1,71 @@
+*{
+    background-color: #F5EBDC;
+    font-family: 'Roboto', sans-serif;
+}
+
+.all{
+    margin-top: 2%;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image img{
+    background-position: center;
+    width: 80px;
+    border-radius: 6px;
+}
+
+.leftside{
+    cursor: pointer;
+    width: 50px;
+}
+
+.rightside{
+    display: flex;
+    gap:20px;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.youRule{
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 10% 5% 14% ;
+    color: #502314;
+}
+.youRuleImage{
+    min-width: 50%;
+    min-height: 50%;
+}
+
+#createOrder{
+    font-size: large;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-style: solid;
+    border-color: red;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    min-height: 50vh;
+}
+
+.butInOrderPage{
+    display: flex;
+    justify-content:space-around; 
+}
+.butInOrderPage button{
+    border-radius: 4px;
+    font-size: large;
+}

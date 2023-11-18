@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King Foods</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="all">
+        <header>
+            <div class="leftside" id="leftside"><span class="material-symbols-outlined" style="font-size: xx-large;">home</span></div>
+            <div class="image"><img src="./logo.jpg"></div>
+            <div class="rightside">Contact Us</div>
+        </header>
+
+        <div class="youRule">
+            <div>
+                <h1>Hola<br>Hi There ! <br>What whould you like to order today</h1>
+                <button id="createOrder"><span class="material-symbols-outlined">fastfood</span>Create an Order</button>
+            </div>
+            <div><img class="youRuleImage" src="./images/youRule.webp" alt="" width="100%"></div>
+        </div>
+
+        <div class="main"  style="display: none;">
+            <h2>What whould you like to order? </h2><br>
+            <br>
+            <div>
+                <label for="foodItem">Choose a food item:</label>
+                <select name="foodItem" id="foodItem">
+                    <option value="iBurger">Indian Burger </option>
+                    <option value="butterB">Butter Bun</option>
+                    <option value="sandwitch">Sandwitch</option>
+                    <option value="aBurger">American Burger</option>
+                </select>
+                <br><br>
+                <input type="checkbox" id="extraCheese" name="extraCheese" value="extraCheese">
+                <label for="extraCheese"> Add extra cheese</label><br>
+    
+                <input type="checkbox" id="onions" name="onions" value="onions">
+                <label for="onions"> Add fresh Onion chops</label><br>
+    
+                <input type="checkbox" id="tomato" name="tomato" value="tomato">
+                <label for="tomato"> Add fresh tomato slizes</label><br>
+    
+                <input type="checkbox" id="bazel" name="bazel" value="bazel">
+                <label for="bazel"> Add freshly chopped bazel leaves</label><br>
+    
+                <br>
+                <div class="butInOrderPage">
+                    <button onclick="addMore()">Add More</button>
+                    <button onclick="checkOut()">Checkout</button>
+                </div>
+                <div id="addHere"></div>
+            </div>
+        </div>
+
+        <div class="aboutUs main" style="display: none; min-height: 20vh;">
+            <h2>&nbsp;Contact me:</h2>
+            <ul>
+                <li>
+                    Phone No: 789456123
+                </li>
+                <li>Email: easwaranpottiak@gmail.com</li>
+            </ul>
+            <h3>&nbsp; I make reliable, scalable web apps at affordable rates 😄</h3>
+        </div>
+    </div>
+    <script src="./logic.js"></script>
+</body>
+</html>
